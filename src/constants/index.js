@@ -23,9 +23,11 @@ import {
     tripguide,
     threejs,
     
+    
   } from "../assets";
   import school1 from "../assets/company/school1.png";
   import university1 from "../assets/company/university1.png";
+  import circuit from "../assets/circuit.png";
   
   export const navLinks = [
     {
@@ -211,7 +213,7 @@ import {
           color: "yellow-text-gradient",
         },
       ],
-      image: jobit,
+      image: circuit,
       source_code_link: "https://github.com/",
     },
     
