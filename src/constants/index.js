@@ -28,6 +28,7 @@ import {
   import school1 from "../assets/company/school1.png";
   import university1 from "../assets/company/university1.png";
   import circuit from "../assets/circuit.png";
+  import homePage from "../assets/homePage.png";
   
   export const navLinks = [
     {
@@ -188,7 +189,7 @@ import {
           color: "yellow-text-gradient",
         },
       ],
-      image: carrent,
+      image: homePage,
       source_code_link: "https://github.com/",
     },
     {
