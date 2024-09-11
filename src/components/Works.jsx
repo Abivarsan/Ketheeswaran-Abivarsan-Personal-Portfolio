@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState} from "react";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
@@ -65,33 +65,33 @@ const ProjectCard = ({ index, name, description, tags, image, repos }) => {
         <div className="relative w-full h-[230px]">
           <img src={image} alt="project_image" className="w-full h-full object-cover rounded-2xl" />
 
-          <div className="absolute inset-0 flex flex-col justify-end m-3 gap-2 card-img_hover">
-            {/* Handle frontend repo */}
-            {repos.frontend && (
-              <div
-                onClick={() => window.open(repos.frontend.link, "_blank")}
-                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-                title={repos.frontend.name} // Tooltip showing "Frontend"
-                onMouseEnter={() => setHoveredRepo(repos.frontend.name)}
-                onMouseLeave={() => setHoveredRepo("")}
-              >
-                <img src={github} alt="source code" className="w-1/2 h-1/2 object-contain" />
-              </div>
-            )}
-            {/* Handle backend repo */}
-            {repos.backend && (
-              <div
-                onClick={() => window.open(repos.backend.link, "_blank")}
-                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-                title={repos.backend.name} // Tooltip showing "Backend"
-                onMouseEnter={() => setHoveredRepo(repos.backend.name)}
-                onMouseLeave={() => setHoveredRepo("")}
-              >
-                <img src={github} alt="source code" className="w-1/2 h-1/2 object-contain" />
-              </div>
-            )}
+          {/* Container for repo icons */}
+          <div className="absolute inset-0 flex justify-end m-3">
+            {/* Flexbox container to align icons side by side */}
+            <div className="flex space-x-2">
+              {repos?.frontend && (
+                <div
+                  onClick={() => window.open(repos.frontend.link, "_blank")}
+                  className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                  onMouseEnter={() => setHoveredRepo(repos.frontend.name)}
+                  onMouseLeave={() => setHoveredRepo("")}
+                >
+                  <img src={github} alt="frontend code" className="w-1/2 h-1/2 object-contain" />
+                </div>
+              )}
+              {repos?.backend && (
+                <div
+                  onClick={() => window.open(repos.backend.link, "_blank")}
+                  className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                  onMouseEnter={() => setHoveredRepo(repos.backend.name)}
+                  onMouseLeave={() => setHoveredRepo("")}
+                >
+                  <img src={github} alt="backend code" className="w-1/2 h-1/2 object-contain" />
+                </div>
+              )}
+            </div>
           </div>
-          {/* Hovered repo name */}
+
           {hoveredRepo && (
             <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-white bg-black p-1 rounded-md">
               {hoveredRepo}

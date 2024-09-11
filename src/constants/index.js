@@ -194,11 +194,11 @@ import {
       repos: {
         frontend: {
           name: "Frontend",
-          link: "https://github.com/username/project-one-frontend"
+          link: "https://github.com/Abivarsan/.netUniTutor-FrontEnd.git"
         },
         backend: {
           name: "Backend",
-          link: "https://github.com/username/project-one-backend"
+          link: "https://github.com/Abivarsan/Last-UniTutor-BackEnd.git"
         }
       }
     },
@@ -228,7 +228,7 @@ import {
      // source_code_link: "https://github.com/",
      repos: {
       frontend: {
-        name: "Frontend",
+        name: "Machine code",
         link: "https://github.com/username/project-two-frontend"
       }
     }

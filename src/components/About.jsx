@@ -112,8 +112,8 @@ const About = () => {
             I’m always open to discussing new opportunities. Download my CV below and let's work together!
           </p>
           <a 
-            href="/mycv/Abivarsan_SE.pdf" 
-            download 
+            href="/mycv/ketheeswaranAbivarsan_CV.pdf" 
+            download="Ketheeswaran_Abivarsan_CV.pdf"
             className="bg-blue-500 text-white py-2 px-6 rounded-md hover:bg-blue-600 transition-colors"
           >
             Download CV
