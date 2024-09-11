@@ -21,10 +21,10 @@ import {
     carrent,
     jobit,
     tripguide,
-    threejs,
-    
-    
+    threejs, 
   } from "../assets";
+
+
   import school1 from "../assets/company/school1.png";
   import university1 from "../assets/company/university1.png";
   import circuit from "../assets/circuit.png";
@@ -190,7 +190,17 @@ import {
         },
       ],
       image: homePage,
-      source_code_link: "https://github.com/",
+      //source_code_link: "https://github.com/",
+      repos: {
+        frontend: {
+          name: "Frontend",
+          link: "https://github.com/username/project-one-frontend"
+        },
+        backend: {
+          name: "Backend",
+          link: "https://github.com/username/project-one-backend"
+        }
+      }
     },
     {
       name: "Automated Coffee Machine",
@@ -215,7 +225,13 @@ import {
         },
       ],
       image: circuit,
-      source_code_link: "https://github.com/",
+     // source_code_link: "https://github.com/",
+     repos: {
+      frontend: {
+        name: "Frontend",
+        link: "https://github.com/username/project-two-frontend"
+      }
+    }
     },
     
   ];
