@@ -229,7 +229,7 @@ import {
      repos: {
       frontend: {
         name: "Machine code",
-        link: "https://github.com/username/project-two-frontend"
+        link: "https://github.com/Abivarsan/AutomatedCoffeeMachine-hardwareProject-.git"
       }
     }
     },
