@@ -24,7 +24,7 @@ const Navbar = () => {
             font-bold cursor-pointer flex">
             Abivarsan &nbsp; 
             <span className='sm:block hidden'>| 
-              Ketheeswaran</span></p>
+            Ketheeswaran</span></p>
           </Link>
           <ul className="list-none hidden sm:flex flex-row gap-10">
               {navLinks.map((Link) => (
