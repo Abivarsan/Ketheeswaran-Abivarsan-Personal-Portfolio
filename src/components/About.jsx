@@ -111,13 +111,21 @@ const About = () => {
           <p className="text-white text-[17px] leading-[28px] mb-6">
             I’m always open to discussing new opportunities. Download my CV below and let's work together!
           </p>
-          <a 
+          {/* <a 
             href="/Ketheeswaran-Abivarsan-Personal-Portfolio/KetheeswaranAbivarsan_CV.pdf" 
             download="Ketheeswaran_Abivarsan_CV.pdf"
             className="bg-blue-500 text-white py-2 px-6 rounded-md hover:bg-blue-600 transition-colors"
           >
             Download CV
-          </a>
+          </a> */}
+          <a 
+            href="/Ketheeswaran-Abivarsan-Personal-Portfolio/KetheeswaranAbivarsan_CV.pdf?v=2" 
+            download="Ketheeswaran_Abivarsan_CV.pdf"
+            className="bg-blue-500 text-white py-2 px-6 rounded-md hover:bg-blue-600 transition-colors"
+            >
+              Download CV
+            </a>
+
         </motion.div>
       </div>
 
