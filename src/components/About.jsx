@@ -80,11 +80,9 @@ const ServiceCard = ({ title, icon, index }) => {
     </Tilt>
   );
 };
-const basePath = process.env.NODE_ENV === "production" 
-  ? "/AbivarsanK_Personal_Portfolio" 
-  : "";
-
-const cvPath = `${basePath}/Abivarsan_Ketheeswaran_CV.pdf`;
+const cvPath = process.env.NODE_ENV === "production"
+  ? "/AbivarsanK_Personal_Portfolio/Abivarsan_Ketheeswaran_CV.pdf"
+  : "/Abivarsan_Ketheeswaran_CV.pdf";
 
 const About = () => {
   return (
@@ -123,6 +121,8 @@ const About = () => {
             download="Abivarsan_Ketheeswaran_CV.pdf"
             className="bg-blue-500 text-white py-2 px-6 rounded-md hover:bg-blue-600 transition-colors"
           >
+ 
+
               Download CV
             </a>
 
