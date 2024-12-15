@@ -43,8 +43,7 @@ import {
 
 const App = () => {
   return (
-    <BrowserRouter BasePath={process.env.NODE_ENV === "production"  ? "/AbivarsanK_Personal_Portfolio" 
-      : ""}>
+    <BrowserRouter  basename="/Ketheeswaran-Abivarsan-Personal-Portfolio">
       <div className="relative z-0 bg-primary">
         {/* Hero Section */}
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">

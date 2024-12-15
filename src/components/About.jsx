@@ -80,8 +80,9 @@ const ServiceCard = ({ title, icon, index }) => {
     </Tilt>
   );
 };
+
 const cvPath = process.env.NODE_ENV === "production"
-  ? "/AbivarsanK_Personal_Portfolio/Abivarsan_Ketheeswaran_CV.pdf"
+  ? "/Ketheeswaran-Abivarsan-Personal-Portfolio/Abivarsan_Ketheeswaran_CV.pdf"
   : "/Abivarsan_Ketheeswaran_CV.pdf";
 
 const About = () => {
