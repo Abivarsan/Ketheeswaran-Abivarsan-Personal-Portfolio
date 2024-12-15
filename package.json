@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Abivarsan.github.io/Ketheeswaran-Abivarsan-Personal-Portfolio",
+  "homepage": "https://Abivarsan.github.io/AbivarsanK_Personal_Portfolio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
