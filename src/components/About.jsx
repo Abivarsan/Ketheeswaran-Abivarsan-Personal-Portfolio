@@ -80,6 +80,11 @@ const ServiceCard = ({ title, icon, index }) => {
     </Tilt>
   );
 };
+const basePath = process.env.NODE_ENV === "production" 
+  ? "/AbivarsanK_Personal_Portfolio" 
+  : "";
+
+const cvPath = `${basePath}/Abivarsan_Ketheeswaran_CV.pdf`;
 
 const About = () => {
   return (
@@ -111,18 +116,13 @@ const About = () => {
           <p className="text-white text-[17px] leading-[28px] mb-6">
             I’m always open to discussing new opportunities. Download my CV below and let's work together!
           </p>
-          {/* <a 
-            href="/Ketheeswaran-Abivarsan-Personal-Portfolio/KetheeswaranAbivarsan_CV.pdf" 
-            download="Ketheeswaran_Abivarsan_CV.pdf"
+                     
+
+          <a 
+            href={cvPath} 
+            download="Abivarsan_Ketheeswaran_CV.pdf"
             className="bg-blue-500 text-white py-2 px-6 rounded-md hover:bg-blue-600 transition-colors"
           >
-            Download CV
-          </a> */}
-          <a 
-            href="/Ketheeswaran-Abivarsan-Personal-Portfolio/KetheeswaranAbivarsan_CV.pdf?v=2" 
-            download="Ketheeswaran_Abivarsan_CV.pdf"
-            className="bg-blue-500 text-white py-2 px-6 rounded-md hover:bg-blue-600 transition-colors"
-            >
               Download CV
             </a>
 
